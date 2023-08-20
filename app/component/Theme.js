@@ -22,7 +22,10 @@ export default function Theme() {
     }, [theme]);
 
     return (
-        <button onClick={changeTheme}>
+        <button
+            onClick={changeTheme}
+            className="btn btn-ghost normal-case text-xl"
+        >
             {theme === "dark" ? (
                 <svg
                     className="fill-current w-6 h-6"
@@ -33,7 +36,7 @@ export default function Theme() {
                 </svg>
             ) : (
                 <svg
-                    className="swap-off fill-current w-6 h-6"
+                    className="fill-current w-6 h-6"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                 >
