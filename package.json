@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "open-browser": "start http://localhost:3000 && npm run dev"
   },
   "dependencies": {
     "autoprefixer": "10.4.15",

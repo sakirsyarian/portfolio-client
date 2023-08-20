@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --first-hue: 161;
+    --sat: 94%;
+    --lig: 30%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply transition-all duration-300 
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+.hero {
+    @apply flex flex-col md:flex-row items-center justify-around gap-16 md:gap-0
+}
+
+.hero-bg {
+    justify-self: center;
+    width: 290px;
+    height: 400px;
+    background: linear-gradient(180deg,
+            hsla(var(--first-hue), var(--sat), var(--lig), 1),
+            hsla(var(--first-hue), var(--sat), var(--lig), 0.2));
+    border-radius: 10rem 10rem 1rem 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .hero-bg {
+            width: 270px;
+            height: 380px;
+            margin: auto;
+        }
+}
