@@ -9,7 +9,7 @@ export default function Hero() {
                     <a
                         href="https://github.com"
                         target="_blank"
-                        className="p-1 mx-auto bg-gray-200 rounded"
+                        className="p-1 mx-auto bg-gray-100 rounded"
                     >
                         <svg
                             className="w-5 h-5"
@@ -25,7 +25,7 @@ export default function Hero() {
                     <a
                         href="https://linkedin.com"
                         target="_blank"
-                        className="p-1 mx-auto bg-gray-200 rounded"
+                        className="p-1 mx-auto bg-gray-100 rounded"
                     >
                         <svg
                             className="w-5 h-5"
@@ -41,7 +41,7 @@ export default function Hero() {
                     <a
                         href="https://instagram.com"
                         target="_blank"
-                        className="p-1 mx-auto bg-gray-200 rounded"
+                        className="p-1 mx-auto bg-gray-100 rounded"
                     >
                         <svg
                             className="w-5 h-5"

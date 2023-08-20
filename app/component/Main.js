@@ -1,11 +1,15 @@
+import About from "./About";
 import Hero from "./Hero";
 
 export default function Main() {
     return (
         <main className="sm:container mx-auto border">
-            <div className="md:pt-40 pt-28 md:pb-20 pb-14">
-                <Hero />
-            </div>
+            <section className="pt-28 md:pt-40 pb-14 md:pb-20">
+                <div className="grid gap-14 md:gap-20">
+                    <Hero />
+                    <About />
+                </div>
+            </section>
         </main>
     );
 }
