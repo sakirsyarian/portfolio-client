@@ -31,7 +31,7 @@ export default async function Ability() {
     const { data: abilities } = await getAbilities();
 
     return (
-        <div id="ability" className="grid items-center justify-center border">
+        <section id="ability" className="py-24 border border-blue-500">
             {/* title */}
             <h3 className="text-center mb-3">My Abilities</h3>
             <h2 className="text-xl md:text-2xl font-medium text-center">
@@ -39,16 +39,18 @@ export default async function Ability() {
             </h2>
 
             <div className="px-8 py-12 mx-auto border">
-                <p className="pb-8 text-center">
-                    The skills, tools and technologies I am really good at:
-                </p>
+                <div className="border">
+                    <p className="pb-8 text-center">
+                        The skills, tools and technologies I am really good at:
+                    </p>
 
-                <div className="grid grid-cols-2 md:grid-cols-5 xl:grid-cols-8 gap-5 md:gap-10 justify-center">
-                    {abilities.map((ability) => (
-                        <AbilityList key={ability._id} ability={ability} />
-                    ))}
+                    <div className="grid grid-cols-2 md:grid-cols-5 xl:grid-cols-8 gap-5 md:gap-10 justify-center">
+                        {abilities.map((ability) => (
+                            <AbilityList key={ability._id} ability={ability} />
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
