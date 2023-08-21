@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
     return (
         <section className="hero border">
-            <div className="flex flex-row justify-center items-center gap-12 lg:gap-24">
+            <div className="flex flex-row justify-center items-center gap-8 lg:gap-24">
                 {/* social media */}
                 <div className="flex flex-col gap-5">
                     <a
@@ -78,10 +78,11 @@ export default function Hero() {
                 <div className="hero-bg">
                     <Image
                         src="/img/profile.png"
+                        style={{ width: "auto", height: "auto" }}
                         width={220}
                         height={220}
                         alt="Sarian"
-                        priority
+                        priority={true}
                     />
                 </div>
             </div>

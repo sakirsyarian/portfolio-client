@@ -1,14 +1,14 @@
-import Image from "next/image";
-
 export default function About() {
     return (
-        <div className="grid items-center justify-center border">
+        <div id="about" className="grid items-center justify-center border">
+            {/* title */}
             <h3 className="text-center mb-3">My Intro</h3>
             <h2 className="text-xl md:text-2xl font-medium text-center">
                 About Me
             </h2>
 
             <div className="px-8 py-12 mx-auto xl:w-1/2 border">
+                {/* card */}
                 <div className="flex flex-col md:flex-row justify-center gap-5 text-center">
                     <div className="p-5 w-full xl:w-1/4 bg-gray-100 space-y-2 rounded-lg">
                         <svg
@@ -26,7 +26,7 @@ export default function About() {
                             />
                         </svg>
                         <p className="font-medium text-sm">Experience</p>
-                        <p className="text-xs">2 Years Working</p>
+                        <p className="text-xs">3 Years Working</p>
                     </div>
                     <div className="p-5 w-full xl:w-1/4 bg-gray-100 space-y-2 rounded-lg">
                         <svg
@@ -65,13 +65,16 @@ export default function About() {
                         <p className="text-xs">Online 24/7</p>
                     </div>
                 </div>
+                {/* description */}
                 <p className="py-8">
                     I have been a professional developer for almost two years,
                     mostly I work professionally with javascript. I like
                     building new stuff and working with other people, my main
                     interest is programming and cloud computing.
                 </p>
-                <button className="btn btn-accent">Contact Me</button>
+                <button className="btn btn-accent flex mx-auto">
+                    Contact Me
+                </button>
             </div>
         </div>
     );

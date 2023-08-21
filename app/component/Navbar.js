@@ -38,7 +38,7 @@ export default function Navbar() {
 
                             {/* button navigation */}
                             <div className="btm-nav md:hidden border">
-                                <Link href="#about">
+                                <Link href="#about" className="hover:active">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -54,7 +54,10 @@ export default function Navbar() {
                                         />
                                     </svg>
                                 </Link>
-                                <Link href="#experience" className="active">
+                                <Link
+                                    href="#experience"
+                                    className="hover:active"
+                                >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -70,7 +73,7 @@ export default function Navbar() {
                                         />
                                     </svg>
                                 </Link>
-                                <Link href="#project">
+                                <Link href="#project" className="hover:active">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -86,7 +89,7 @@ export default function Navbar() {
                                         />
                                     </svg>
                                 </Link>
-                                <Link href="#contact">
+                                <Link href="#contact" className="hover:active">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
