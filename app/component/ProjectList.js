@@ -1,13 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect } from "react";
 
 export default function ProjectList({ project }) {
     return (
         <>
             <div className="w-full h-full bg-base-200 rounded-xl">
-                <div className="p-4 sm:p-8">
+                <div className="p-6 sm:p-8">
                     <Image
                         src={`/project/${project.image}`}
                         width={800}
@@ -17,7 +16,7 @@ export default function ProjectList({ project }) {
                     />
                 </div>
 
-                <div className="px-4 pb-4 sm:px-8 sm:pb-8">
+                <div className="px-6 pb-6 sm:px-8 sm:pb-8">
                     <h3 className="card-title font-medium text-lg border">
                         {project.name}
                     </h3>
