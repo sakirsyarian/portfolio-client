@@ -11,10 +11,7 @@ export default function Service() {
 
             <div className="mx-auto px-8 py-12 border">
                 {/* offering */}
-                <div
-                    className="flex flex-col md:flex-row justify-center gap-5 border"
-                    style={{ zIndex: 0 }}
-                >
+                <div className="flex flex-col md:flex-row justify-center gap-5 border">
                     <div className="w-full border">
                         <div className="card-body">
                             <h3 className="card-title text-lg">SEO Friendly</h3>
@@ -104,7 +101,7 @@ export default function Service() {
             >
                 <form
                     method="dialog"
-                    className="modal-box p-10 md:p-14 max-w-2xl"
+                    className="modal-box p-8 md:p-14 max-w-2xl"
                 >
                     <h3 className="font-bold text-lg text-center">
                         Search Engine Optimization
@@ -132,7 +129,7 @@ export default function Service() {
             >
                 <form
                     method="dialog"
-                    className="modal-box p-10 md:p-14 max-w-3xl"
+                    className="modal-box p-8 md:p-14 max-w-3xl"
                 >
                     <h3 className="font-bold text-lg text-center">
                         UI Designer
@@ -160,7 +157,7 @@ export default function Service() {
             >
                 <form
                     method="dialog"
-                    className="modal-box p-10 md:p-14 max-w-2xl"
+                    className="modal-box p-8 md:p-14 max-w-2xl"
                 >
                     <h3 className="font-bold text-lg text-center">
                         Mobile Optimized

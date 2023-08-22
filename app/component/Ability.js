@@ -4,6 +4,7 @@ async function getAbilities() {
     const res = await fetch("http://localhost:3000/abilities", {
         next: { revalidate: 0 },
     });
+
     if (!res.ok) {
         throw new Error("Failed to fetch data");
     }
@@ -38,7 +39,7 @@ export default async function Ability() {
                 Tools Used
             </h2>
 
-            <div className="px-8 py-12 mx-auto border">
+            <div className="mx-auto px-8 py-12 border">
                 <div className="border">
                     <p className="pb-8 text-center">
                         The skills, tools and technologies I am really good at:

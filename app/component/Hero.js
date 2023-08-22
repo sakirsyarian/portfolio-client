@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <div className="px-8 w-full border">
+        <section id="hero" className="px-8 w-full border">
             <div id="hero" className="hero border">
                 {/* left */}
                 <div className="flex flex-row justify-center items-center gap-8 lg:gap-24 border">
@@ -87,6 +87,6 @@ export default function Hero() {
                     />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
