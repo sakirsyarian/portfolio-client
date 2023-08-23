@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Contact() {
     return (
-        <section id="contact" className="py-24 border border-orange-500">
+        <section id="contact" className="pt-24 pb-10 border border-orange-500">
             {/* title */}
             <h3 className="mb-3 text-center text-sm text-gray-500">
                 Get in touch
@@ -12,12 +12,12 @@ export default function Contact() {
                 Contact Me
             </h2>
 
-            <div className="mx-auto px-8 py-12 border">
+            <div className="mx-auto px-4 md:px-8 xl:px-60 py-12 border">
                 <div className="border">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 justify-center">
                         {/* left */}
                         <div className="flex flex-col items-center justify-center gap-5 text-center border">
-                            <div className="grid justify-center p-6 w-full space-y-2 rounded-lg shadow-lg border">
+                            <div className="grid justify-center p-6 w-full space-y-4 rounded-2xl shadow-lg border">
                                 <div className="flex justify-center items-center gap-2">
                                     <div className="border">
                                         <Image
@@ -29,11 +29,11 @@ export default function Contact() {
                                     </div>
                                     <p className="font-medium border">Email</p>
                                 </div>
-                                <p className="text-gray-500 border">
+                                <p className="text-sm text-emerald-400 border">
                                     sakirsyarian@gmail.com
                                 </p>
                             </div>
-                            <div className="grid justify-center p-6 w-full space-y-2 rounded-lg shadow-lg border">
+                            <div className="grid justify-center p-6 w-full space-y-4 rounded-2xl shadow-lg border">
                                 <div className="flex justify-center items-center gap-2">
                                     <div className="border">
                                         <Image
@@ -47,11 +47,11 @@ export default function Contact() {
                                         Telegram
                                     </p>
                                 </div>
-                                <p className="text-gray-500 border">
+                                <p className="text-sm text-emerald-400 border">
                                     @sakirsyarian
                                 </p>
                             </div>
-                            <div className="grid justify-center p-6 w-full space-y-2 rounded-lg shadow-lg border">
+                            <div className="grid justify-center p-6 w-full space-y-4 rounded-2xl shadow-lg border">
                                 <div className="flex justify-center items-center gap-2">
                                     <div className="border">
                                         <Image
@@ -65,7 +65,7 @@ export default function Contact() {
                                         Discord
                                     </p>
                                 </div>
-                                <p className="text-gray-500 border">
+                                <p className="text-sm text-emerald-400 border">
                                     @sakirsyarian
                                 </p>
                             </div>

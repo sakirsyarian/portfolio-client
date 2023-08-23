@@ -14,7 +14,7 @@ async function getTestimonials() {
 
 function TestimonialList({ testimonial }) {
     return (
-        <div className="p-6 space-y-2 rounded-lg shadow-lg border">
+        <div className="p-6 space-y-2 rounded-2xl shadow-lg border">
             <div className="mx-auto border">
                 <Image
                     src={`/avatar/${testimonial.image}`}
@@ -34,7 +34,10 @@ export default async function Testimonial() {
     const { data: testimonials } = await getTestimonials();
 
     return (
-        <section id="testimonial" className="py-24 border border-indigo-500">
+        <section
+            id="testimonial"
+            className="pt-24 pb-10 border border-indigo-500"
+        >
             {/* title */}
             <h3 className="mb-3 text-center text-sm text-gray-500">
                 My Clients Say
@@ -43,7 +46,7 @@ export default async function Testimonial() {
                 Testimonial
             </h2>
 
-            <div className="mx-auto px-8 py-12 border">
+            <div className="mx-auto px-4 md:px-8 xl:px-60 py-12 border">
                 <div className="border">
                     <p className="pb-8 text-center text-gray-600">
                         Nice things people have said about me:

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section id="hero" className="px-8 w-full border">
+        <section id="hero" className="px-4 md:px-8 xl:px-60 w-full border">
             <div id="hero" className="hero border">
                 {/* left */}
                 <div className="flex flex-row justify-center items-center gap-8 lg:gap-24 border">
@@ -66,8 +66,8 @@ export default function Hero() {
                         </h1>
                         <p className="text-gray-500">Fullstack Developer</p>
 
-                        <div className="mt-10 md:mt-14 flex gap-5">
-                            <button className="button outline-emerald">
+                        <div className="mt-10 md:mt-14 flex flex-col sm:flex-row gap-5">
+                            <button className="button outline-emerald text-emerald-500">
                                 Download CV
                             </button>
                             <button className="button emerald">About Me</button>

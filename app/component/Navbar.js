@@ -7,7 +7,7 @@ export default function Navbar() {
             <div className="fixed top-0 left-0 right-0">
                 <div className="bg-base-100">
                     <div className="sm:container mx-auto border">
-                        <div className="px-8 navbar border">
+                        <div className="px-4 md:px-8 xl:px-60 navbar border">
                             {/* logo */}
                             <div className="flex-1 border">
                                 <Link

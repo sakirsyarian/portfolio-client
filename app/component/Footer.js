@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <section
             id="testimonial"
-            className="py-24 bg-emerald-500 border border-pink-500"
+            className="py-12 text-base-100 bg-emerald-500 border border-pink-500"
         >
             {/* title */}
             <h2 className="font-bold text-2xl md:text-4xl text-center">

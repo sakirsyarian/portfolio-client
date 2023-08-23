@@ -5,18 +5,17 @@ import Image from "next/image";
 export default function ProjectList({ project }) {
     return (
         <>
-            <div className="w-full h-full rounded-lg shadow-lg">
-                <div className="p-6 sm:p-8">
-                    <Image
-                        src={`/project/${project.image}`}
-                        width={800}
-                        height={800}
-                        alt={project.name}
-                        priority={true}
-                    />
-                </div>
+            <div className="w-full h-full rounded-2xl shadow-lg">
+                <Image
+                    src={`/project/${project.image}`}
+                    width={800}
+                    height={800}
+                    alt={project.name}
+                    priority={true}
+                    className="rounded-t-2xl"
+                />
 
-                <div className="px-6 pb-6 sm:px-8 sm:pb-8">
+                <div className="p-6">
                     <h3 className="card-title font-medium text-lg border">
                         {project.name}
                     </h3>
