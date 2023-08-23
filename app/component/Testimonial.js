@@ -14,7 +14,7 @@ async function getTestimonials() {
 
 function TestimonialList({ testimonial }) {
     return (
-        <div className="space-y-2 border">
+        <div className="p-6 space-y-2 rounded-lg shadow-lg border">
             <div className="mx-auto border">
                 <Image
                     src={`/avatar/${testimonial.image}`}
@@ -23,9 +23,9 @@ function TestimonialList({ testimonial }) {
                     alt={testimonial.name}
                 />
             </div>
-            <p>{testimonial.name}</p>
-            <p className="text-sm">{testimonial.role}</p>
-            <p>{testimonial.message}</p>
+            <p className="font-medium text-lg">{testimonial.name}</p>
+            <p className="text-sm text-gray-500">{testimonial.role}</p>
+            <p className="pt-2 text-gray-600">{testimonial.message}</p>
         </div>
     );
 }
@@ -36,14 +36,16 @@ export default async function Testimonial() {
     return (
         <section id="testimonial" className="py-24 border border-indigo-500">
             {/* title */}
-            <h3 className="text-center mb-3">My Clients Say</h3>
-            <h2 className="text-xl md:text-2xl font-medium text-center">
+            <h3 className="mb-3 text-center text-sm text-gray-500">
+                My Clients Say
+            </h3>
+            <h2 className="text-xl md:text-2xl font-medium text-center text-emerald-500">
                 Testimonial
             </h2>
 
             <div className="mx-auto px-8 py-12 border">
                 <div className="border">
-                    <p className="pb-8 text-center">
+                    <p className="pb-8 text-center text-gray-600">
                         Nice things people have said about me:
                     </p>
 

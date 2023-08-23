@@ -12,7 +12,7 @@ export default function Navbar() {
                             <div className="flex-1 border">
                                 <Link
                                     href="#home"
-                                    className="btn btn-ghost normal-case text-xl"
+                                    className="btn btn-ghost normal-case text-xl text-emerald-500"
                                 >
                                     Sarian
                                 </Link>
@@ -25,9 +25,7 @@ export default function Navbar() {
                                         <Link href="#about">About</Link>
                                     </li>
                                     <li>
-                                        <Link href="#experience">
-                                            Experiences
-                                        </Link>
+                                        <Link href="#ability">Abilities</Link>
                                     </li>
                                     <li>
                                         <Link href="#project">Projects</Link>
@@ -61,7 +59,7 @@ export default function Navbar() {
                                         </svg>
                                     </Link>
                                     <Link
-                                        href="#experience"
+                                        href="#ability"
                                         className="hover:active"
                                     >
                                         <svg

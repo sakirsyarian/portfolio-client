@@ -23,7 +23,7 @@ function AbilityList({ ability }) {
                     alt={ability.name}
                 />
             </div>
-            <p>{ability.name}</p>
+            <p className="text-gray-600">{ability.name}</p>
         </div>
     );
 }
@@ -34,14 +34,16 @@ export default async function Ability() {
     return (
         <section id="ability" className="py-24 border border-blue-500">
             {/* title */}
-            <h3 className="text-center mb-3">My Abilities</h3>
-            <h2 className="text-xl md:text-2xl font-medium text-center">
+            <h3 className="mb-3 text-center text-sm text-gray-500">
+                My Abilities
+            </h3>
+            <h2 className="text-xl md:text-2xl font-medium text-center text-emerald-500">
                 Tools Used
             </h2>
 
             <div className="mx-auto px-8 py-12 border">
                 <div className="border">
-                    <p className="pb-8 text-center">
+                    <p className="pb-8 text-center text-gray-600">
                         The skills, tools and technologies I am really good at:
                     </p>
 

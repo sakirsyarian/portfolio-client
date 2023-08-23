@@ -4,19 +4,21 @@ export default function Service() {
     return (
         <section id="service" className="py-24 border border-green-500">
             {/* title */}
-            <h3 className="text-center mb-3">My Service</h3>
-            <h2 className="text-xl md:text-2xl font-medium text-center">
+            <h3 className="mb-3 text-center text-sm text-gray-500">
+                My Service
+            </h3>
+            <h2 className="text-xl md:text-2xl font-medium text-center text-emerald-500">
                 What I Offer
             </h2>
 
             <div className="mx-auto px-8 py-12 border">
                 {/* offering */}
                 <div className="flex flex-col md:flex-row justify-center gap-5 border">
-                    <div className="w-full border">
-                        <div className="card-body">
+                    <div className="w-full rounded-lg shadow-lg">
+                        <div className="card-body space-y-2">
                             <h3 className="card-title text-lg">SEO Friendly</h3>
-                            <div
-                                className="w-28 flex justify-between items-center cursor-pointer border"
+                            <button
+                                className="w-24 flex justify-between items-center text-sm text-emerald-400 border"
                                 onClick={() => window.modal_seo.showModal()}
                             >
                                 See more
@@ -26,7 +28,7 @@ export default function Service() {
                                     viewBox="0 0 24 24"
                                     strokeWidth={1.5}
                                     stroke="currentColor"
-                                    className="w-6 h-6"
+                                    className="w-5 h-5"
                                 >
                                     <path
                                         strokeLinecap="round"
@@ -34,15 +36,15 @@ export default function Service() {
                                         d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                                     />
                                 </svg>
-                            </div>
+                            </button>
                         </div>
                     </div>
 
-                    <div className="w-full border">
-                        <div className="card-body">
+                    <div className="w-full rounded-lg shadow-lg">
+                        <div className="card-body space-y-2">
                             <h3 className="card-title text-lg">UI Designer</h3>
-                            <span
-                                className="w-28 flex justify-between items-center cursor-pointer border"
+                            <button
+                                className="w-24 flex justify-between items-center text-sm text-emerald-400 border"
                                 onClick={() => window.modal_ui.showModal()}
                             >
                                 See more
@@ -52,7 +54,7 @@ export default function Service() {
                                     viewBox="0 0 24 24"
                                     strokeWidth={1.5}
                                     stroke="currentColor"
-                                    className="w-6 h-6"
+                                    className="w-5 h-5"
                                 >
                                     <path
                                         strokeLinecap="round"
@@ -60,17 +62,17 @@ export default function Service() {
                                         d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                                     />
                                 </svg>
-                            </span>
+                            </button>
                         </div>
                     </div>
 
-                    <div className="w-full border">
-                        <div className="card-body">
+                    <div className="w-full rounded-lg shadow-lg">
+                        <div className="card-body space-y-2">
                             <h3 className="card-title text-lg">
                                 Mobile Optimized
                             </h3>
-                            <div
-                                className="w-28 flex justify-between items-center cursor-pointer border"
+                            <button
+                                className="w-24 flex justify-between items-center text-sm text-emerald-400 border"
                                 onClick={() => window.modal_mobile.showModal()}
                             >
                                 See more
@@ -80,7 +82,7 @@ export default function Service() {
                                     viewBox="0 0 24 24"
                                     strokeWidth={1.5}
                                     stroke="currentColor"
-                                    className="w-6 h-6"
+                                    className="w-5 h-5"
                                 >
                                     <path
                                         strokeLinecap="round"
@@ -88,7 +90,7 @@ export default function Service() {
                                         d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                                     />
                                 </svg>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -103,15 +105,15 @@ export default function Service() {
                     method="dialog"
                     className="modal-box p-8 md:p-14 max-w-2xl"
                 >
-                    <h3 className="font-bold text-lg text-center">
+                    <h3 className="font-bold text-xl text-center text-emerald-500">
                         Search Engine Optimization
                     </h3>
-                    <p className="py-6">
+                    <p className="py-6 text-gray-600">
                         We make sure your website applies SEO best practices, so
                         that your website will be easily found by Google
                     </p>
-                    <ul className="space-y-2">
-                        <li>✅ Plan your website structure </li>
+                    <ul className="space-y-2 text-gray-600">
+                        <li>✅ Plan your websites tructure </li>
                         <li>✅ Use an SEO-Friendly URL Structure</li>
                         <li>✅ Make sure your site is mobile-friendly</li>
                         <li>✅ Make sure you’re using HTTPs </li>
@@ -131,14 +133,14 @@ export default function Service() {
                     method="dialog"
                     className="modal-box p-8 md:p-14 max-w-3xl"
                 >
-                    <h3 className="font-bold text-lg text-center">
+                    <h3 className="font-bold text-xl text-center text-emerald-500">
                         UI Designer
                     </h3>
-                    <p className="py-6">
+                    <p className="py-6 text-gray-600">
                         Service with more than 3 years of experience. Providing
                         quality work to client and companies.
                     </p>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 text-gray-600">
                         <li>✅ I develop the user interface.</li>
                         <li>✅ Web page development.</li>
                         <li>✅ I create ux element interaction.</li>
@@ -159,15 +161,15 @@ export default function Service() {
                     method="dialog"
                     className="modal-box p-8 md:p-14 max-w-2xl"
                 >
-                    <h3 className="font-bold text-lg text-center">
+                    <h3 className="font-bold text-xl text-center text-emerald-500">
                         Mobile Optimized
                     </h3>
-                    <p className="py-6">
+                    <p className="py-6 text-gray-600">
                         As you probably know, mobile browsing is on the rise,
                         meaning a lot of people use them as their primary way to
                         navigate the web.
                     </p>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 text-gray-600">
                         <li>✅ Test your website at multiple resolutions</li>
                         <li>✅ Navigation display well on smaller screens</li>
                         <li>✅ Images look good at smaller resolutions</li>

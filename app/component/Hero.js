@@ -60,17 +60,17 @@ export default function Hero() {
 
                     {/* heading */}
                     <div>
-                        <p className="">Hello. I&apos;m</p>
+                        <p className="text-gray-500">Hello. I&apos;m</p>
                         <h1 className="py-4 md:py-6 text-3xl md:text-4xl font-bold">
                             Ahmad Sarian
                         </h1>
-                        <p className="">Fullstack Developer</p>
+                        <p className="text-gray-500">Fullstack Developer</p>
 
                         <div className="mt-10 md:mt-14 flex gap-5">
-                            <button className="btn btn-outline btn-accent">
+                            <button className="button outline-emerald">
                                 Download CV
                             </button>
-                            <button className="btn btn-accent">About Me</button>
+                            <button className="button emerald">About Me</button>
                         </div>
                     </div>
                 </div>
@@ -83,6 +83,7 @@ export default function Hero() {
                         width={220}
                         height={220}
                         alt="Sarian"
+                        quality={100}
                         priority={true}
                     />
                 </div>

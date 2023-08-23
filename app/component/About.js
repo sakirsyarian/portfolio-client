@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 export default function About() {
     return (
         <section id="about" className="py-24 border border-red-500">
             {/* title */}
-            <h3 className="text-center mb-3">My Intro</h3>
-            <h2 className="text-xl md:text-2xl font-medium text-center">
+            <h3 className="mb-3 text-center text-sm text-gray-500">My Intro</h3>
+            <h2 className="text-xl md:text-2xl font-medium text-center text-emerald-500">
                 About Me
             </h2>
 
@@ -11,14 +13,14 @@ export default function About() {
                 <div className="border">
                     {/* card */}
                     <div className="flex flex-col md:flex-row justify-center gap-5 text-center">
-                        <div className="p-5 w-full xl:w-1/4 bg-gray-100 space-y-2 rounded-lg">
+                        <div className="p-5 w-full xl:w-1/4 space-y-2 rounded-lg shadow-lg">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 strokeWidth={1.5}
                                 stroke="currentColor"
-                                className="w-6 h-6 mx-auto"
+                                className="w-6 h-6 mx-auto text-emerald-500"
                             >
                                 <path
                                     strokeLinecap="round"
@@ -27,16 +29,18 @@ export default function About() {
                                 />
                             </svg>
                             <p className="font-medium text-sm">Experience</p>
-                            <p className="text-xs">3 Years Working</p>
+                            <p className="text-xs text-gray-500">
+                                3 Years Working
+                            </p>
                         </div>
-                        <div className="p-5 w-full xl:w-1/4 bg-gray-100 space-y-2 rounded-lg">
+                        <div className="p-5 w-full xl:w-1/4 space-y-2 rounded-lg shadow-lg">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 strokeWidth={1.5}
                                 stroke="currentColor"
-                                className="w-6 h-6 mx-auto"
+                                className="w-6 h-6 mx-auto text-emerald-500"
                             >
                                 <path
                                     strokeLinecap="round"
@@ -45,16 +49,18 @@ export default function About() {
                                 />
                             </svg>
                             <p className="font-medium text-sm">Completed</p>
-                            <p className="text-xs">20 + Projetcs</p>
+                            <p className="text-xs text-gray-500">
+                                20 + Projetcs
+                            </p>
                         </div>
-                        <div className="p-5 w-full xl:w-1/4 bg-gray-100 space-y-2 rounded-lg">
+                        <div className="p-5 w-full xl:w-1/4 space-y-2 rounded-lg shadow-lg">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 strokeWidth={1.5}
                                 stroke="currentColor"
-                                className="w-6 h-6 mx-auto"
+                                className="w-6 h-6 mx-auto text-emerald-500"
                             >
                                 <path
                                     strokeLinecap="round"
@@ -63,19 +69,31 @@ export default function About() {
                                 />
                             </svg>
                             <p className="font-medium text-sm">Support</p>
-                            <p className="text-xs">Online 24/7</p>
+                            <p className="text-xs text-gray-500">Online 24/7</p>
                         </div>
                     </div>
                     {/* description */}
-                    <p className="py-8">
-                        I have been a professional developer for almost two
-                        years, mostly I work professionally with javascript. I
-                        like building new stuff and working with other people,
-                        my main interest is programming and cloud computing.
+                    <p className="py-8 leading-7 text-gray-600">
+                        As a full stack developer with almost 3 years of
+                        experience, I have a wide range of skills and knowledge
+                        in web application development. I am proficient in
+                        programming languages such as HTML, CSS, JavaScript and
+                        Node JS, as well as various frameworks like Tailwind,
+                        Vue, React, and Express. I have experience in developing
+                        complex application and have the ability to solve
+                        problems quickly and effectively. Additionally, I
+                        possess project management skill and can communicate
+                        well with client. I am interested in joining a
+                        challenging company in the field web development.
                     </p>
-                    <button className="btn btn-accent flex mx-auto">
-                        Contact Me
-                    </button>
+                    <div className="flex justify-center">
+                        <Link
+                            href="#contact"
+                            className="inline-block button emerald "
+                        >
+                            Contact Me
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>

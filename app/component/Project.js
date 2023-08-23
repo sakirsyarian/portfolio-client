@@ -17,14 +17,16 @@ export default async function Project() {
     return (
         <section id="project" className="py-24 border border-yellow-500">
             {/* title */}
-            <h3 className="text-center mb-3">My Portofolio</h3>
-            <h2 className="text-xl md:text-2xl font-medium text-center">
+            <h3 className="mb-3 text-center text-sm text-gray-500">
+                My Portofolio
+            </h3>
+            <h2 className="text-xl md:text-2xl font-medium text-center text-emerald-500">
                 Recent Projects
             </h2>
 
             <div className="mx-auto px-8 py-12 border">
                 <div className="border">
-                    <p className="pb-8 text-center">
+                    <p className="pb-8 text-center text-gray-600">
                         Some of the noteworthy projects I have built:
                     </p>
 

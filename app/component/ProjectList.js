@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ProjectList({ project }) {
     return (
         <>
-            <div className="w-full h-full bg-base-200 rounded-xl">
+            <div className="w-full h-full rounded-lg shadow-lg">
                 <div className="p-6 sm:p-8">
                     <Image
                         src={`/project/${project.image}`}
@@ -28,14 +28,16 @@ export default function ProjectList({ project }) {
                         }}
                         className="mt-2 flex border"
                     >
-                        <span className="mr-2">See more</span>
+                        <span className="mr-2 text-sm text-emerald-400">
+                            See more
+                        </span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
                             strokeWidth={1.5}
                             stroke="currentColor"
-                            className="w-6 h-6"
+                            className="w-5 h-5 text-emerald-400"
                         >
                             <path
                                 strokeLinecap="round"
@@ -53,14 +55,14 @@ export default function ProjectList({ project }) {
                     method="dialog"
                     className="p-8 md:p-14 modal-box max-w-5xl space-y-6"
                 >
-                    <h3 className="font-bold text-lg text-center">
+                    <h3 className="font-bold text-xl text-center text-emerald-500">
                         {project.name}
                     </h3>
-                    <p className="">{project.description}</p>
+                    <p className="text-gray-600">{project.description}</p>
                     <ul className="flex flex-wrap gap-2 border">
                         {project.tags.map((item) => (
                             <li
-                                className="px-3 py-2 bg-base-200 rounded-lg text-center text-sm"
+                                className="px-3 py-2 bg-base-200 rounded-lg text-center text-sm text-gray-600"
                                 key={item}
                             >
                                 {item}
@@ -69,7 +71,7 @@ export default function ProjectList({ project }) {
                     </ul>
                     <a
                         href={project.github}
-                        className="btn btn-ghost normal-case font-normal"
+                        className="btn btn-ghost hover:bg-emerald-500 hover:text-base-100 normal-case font-normal"
                     >
                         Link to project
                     </a>
