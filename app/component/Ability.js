@@ -14,8 +14,8 @@ async function getAbilities() {
 
 function AbilityList({ ability }) {
     return (
-        <div className="text-center space-y-2 border">
-            <div className="mx-auto w-16 h-16 text-center border">
+        <div className="text-center space-y-2">
+            <div className="mx-auto w-16 h-16 text-center">
                 <Image
                     src={`/ability/${ability.icon}`}
                     width={100}
@@ -32,7 +32,7 @@ export default async function Ability() {
     const { data: abilities } = await getAbilities();
 
     return (
-        <section id="ability" className="pt-24 pb-10 border border-blue-500">
+        <section id="ability" className="pt-24 pb-10">
             {/* title */}
             <h3 className="mb-3 text-center text-sm text-gray-500">
                 My Abilities
@@ -41,8 +41,8 @@ export default async function Ability() {
                 Tools Used
             </h2>
 
-            <div className="mx-auto px-4 md:px-8 xl:px-60 py-12 border">
-                <div className="border">
+            <div className="mx-auto px-4 md:px-8 xl:px-60 py-12">
+                <div className="">
                     <p className="pb-8 text-center text-gray-600">
                         The skills, tools and technologies I am really good at:
                     </p>

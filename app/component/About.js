@@ -2,15 +2,15 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <section id="about" className="pt-24 pb-10 border border-red-500">
+        <section id="about" className="pt-24 pb-10">
             {/* title */}
             <h3 className="mb-3 text-center text-sm text-gray-500">My Intro</h3>
             <h2 className="text-xl md:text-2xl font-medium text-center text-emerald-500">
                 About Me
             </h2>
 
-            <div className="mx-auto px-4 md:px-8 xl:px-60 py-12 border">
-                <div className="border">
+            <div className="mx-auto px-4 md:px-8 xl:px-60 py-12">
+                <div className="">
                     {/* card */}
                     <div className="flex flex-col md:flex-row justify-center gap-5 text-center">
                         <div className="p-5 w-full xl:w-1/4 space-y-2 rounded-2xl shadow-lg">
@@ -89,7 +89,7 @@ export default function About() {
                     <div className="flex justify-center">
                         <Link
                             href="#contact"
-                            className="inline-block button emerald "
+                            className="inline-block button emerald"
                         >
                             Contact Me
                         </Link>

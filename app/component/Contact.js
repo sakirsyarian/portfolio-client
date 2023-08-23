@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Contact() {
     return (
-        <section id="contact" className="pt-24 pb-10 border border-orange-500">
+        <section id="contact" className="pt-24 pb-10">
             {/* title */}
             <h3 className="mb-3 text-center text-sm text-gray-500">
                 Get in touch
@@ -12,14 +12,14 @@ export default function Contact() {
                 Contact Me
             </h2>
 
-            <div className="mx-auto px-4 md:px-8 xl:px-60 py-12 border">
-                <div className="border">
+            <div className="mx-auto px-4 md:px-8 xl:px-60 py-12">
+                <div className="">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 justify-center">
                         {/* left */}
-                        <div className="flex flex-col items-center justify-center gap-5 text-center border">
-                            <div className="grid justify-center p-6 w-full space-y-4 rounded-2xl shadow-lg border">
+                        <div className="flex flex-col items-center justify-center gap-5 text-center">
+                            <div className="grid justify-center p-6 w-full space-y-3 rounded-2xl shadow-lg">
                                 <div className="flex justify-center items-center gap-2">
-                                    <div className="border">
+                                    <div className="">
                                         <Image
                                             src="/social/email.png"
                                             width={30}
@@ -27,15 +27,15 @@ export default function Contact() {
                                             alt="email"
                                         />
                                     </div>
-                                    <p className="font-medium border">Email</p>
+                                    <p className="font-medium">Email</p>
                                 </div>
-                                <p className="text-sm text-emerald-400 border">
+                                <p className="text-sm text-emerald-400">
                                     sakirsyarian@gmail.com
                                 </p>
                             </div>
-                            <div className="grid justify-center p-6 w-full space-y-4 rounded-2xl shadow-lg border">
+                            <div className="grid justify-center p-6 w-full space-y-3 rounded-2xl shadow-lg">
                                 <div className="flex justify-center items-center gap-2">
-                                    <div className="border">
+                                    <div className="">
                                         <Image
                                             src="/social/telegram.png"
                                             width={30}
@@ -43,17 +43,15 @@ export default function Contact() {
                                             alt="telegram"
                                         />
                                     </div>
-                                    <p className="font-medium border">
-                                        Telegram
-                                    </p>
+                                    <p className="font-medium">Telegram</p>
                                 </div>
-                                <p className="text-sm text-emerald-400 border">
+                                <p className="text-sm text-emerald-400">
                                     @sakirsyarian
                                 </p>
                             </div>
-                            <div className="grid justify-center p-6 w-full space-y-4 rounded-2xl shadow-lg border">
+                            <div className="grid justify-center p-6 w-full space-y-3 rounded-2xl shadow-lg">
                                 <div className="flex justify-center items-center gap-2">
-                                    <div className="border">
+                                    <div className="">
                                         <Image
                                             src="/social/discord.png"
                                             width={30}
@@ -61,18 +59,16 @@ export default function Contact() {
                                             alt="discord"
                                         />
                                     </div>
-                                    <p className="font-medium border">
-                                        Discord
-                                    </p>
+                                    <p className="font-medium">Discord</p>
                                 </div>
-                                <p className="text-sm text-emerald-400 border">
+                                <p className="text-sm text-emerald-400">
                                     @sakirsyarian
                                 </p>
                             </div>
                         </div>
 
                         {/* right */}
-                        <div className="border">
+                        <div className="">
                             <form action="#" className="space-y-5">
                                 <div>
                                     <label

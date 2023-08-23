@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section id="hero" className="px-4 md:px-8 xl:px-60 w-full border">
-            <div id="hero" className="hero border">
+        <section id="hero" className="px-4 md:px-8 xl:px-60 w-full">
+            <div id="hero" className="hero ">
                 {/* left */}
-                <div className="flex flex-row justify-center items-center gap-8 lg:gap-24 border">
+                <div className="flex flex-row justify-center items-center gap-8 lg:gap-24">
                     {/* social media */}
                     <div className="flex flex-col gap-5">
                         <a
@@ -67,16 +68,24 @@ export default function Hero() {
                         <p className="text-gray-500">Fullstack Developer</p>
 
                         <div className="mt-10 md:mt-14 flex flex-col sm:flex-row gap-5">
-                            <button className="button outline-emerald text-emerald-500">
+                            <Link
+                                href="/cv.pdf"
+                                className="button outline-emerald text-emerald-500"
+                            >
                                 Download CV
-                            </button>
-                            <button className="button emerald">About Me</button>
+                            </Link>
+                            <Link
+                                href="#about"
+                                className="button emerald flex items-center"
+                            >
+                                About Me
+                            </Link>
                         </div>
                     </div>
                 </div>
 
                 {/* right */}
-                <div className="hero-bg border">
+                <div className="hero-bg">
                     <Image
                         src="/img/profile.png"
                         style={{ width: "auto", height: "auto" }}

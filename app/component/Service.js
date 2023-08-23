@@ -2,7 +2,7 @@
 
 export default function Service() {
     return (
-        <section id="service" className="pt-24 pb-10 border border-green-500">
+        <section id="service" className="pt-24 pb-10">
             {/* title */}
             <h3 className="mb-3 text-center text-sm text-gray-500">
                 My Service
@@ -11,14 +11,14 @@ export default function Service() {
                 What I Offer
             </h2>
 
-            <div className="mx-auto px-4 md:px-8 xl:px-60 py-12 border">
+            <div className="mx-auto px-4 md:px-8 xl:px-60 py-12">
                 {/* offering */}
-                <div className="flex flex-col md:flex-row justify-center gap-5 border">
+                <div className="flex flex-col md:flex-row justify-center gap-5">
                     <div className="w-full rounded-2xl shadow-lg">
                         <div className="card-body space-y-2">
                             <h3 className="card-title text-lg">SEO Friendly</h3>
                             <button
-                                className="w-24 flex justify-between items-center text-sm text-emerald-400 border"
+                                className="w-24 flex justify-between items-center text-sm text-emerald-400"
                                 onClick={() => window.modal_seo.showModal()}
                             >
                                 See more
@@ -44,7 +44,7 @@ export default function Service() {
                         <div className="card-body space-y-2">
                             <h3 className="card-title text-lg">UI Designer</h3>
                             <button
-                                className="w-24 flex justify-between items-center text-sm text-emerald-400 border"
+                                className="w-24 flex justify-between items-center text-sm text-emerald-400"
                                 onClick={() => window.modal_ui.showModal()}
                             >
                                 See more
@@ -72,7 +72,7 @@ export default function Service() {
                                 Mobile Optimized
                             </h3>
                             <button
-                                className="w-24 flex justify-between items-center text-sm text-emerald-400 border"
+                                className="w-24 flex justify-between items-center text-sm text-emerald-400"
                                 onClick={() => window.modal_mobile.showModal()}
                             >
                                 See more

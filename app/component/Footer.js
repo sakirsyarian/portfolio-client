@@ -4,15 +4,15 @@ export default function Footer() {
     return (
         <section
             id="testimonial"
-            className="py-12 text-base-100 bg-emerald-500 border border-pink-500"
+            className="py-12 text-base-100 bg-emerald-500"
         >
             {/* title */}
             <h2 className="font-bold text-2xl md:text-4xl text-center">
                 Ahmad Sarian
             </h2>
 
-            <div className="mx-auto px-8 py-12 border">
-                <div className="border">
+            <div className="mx-auto px-8 py-12">
+                <div className="">
                     <div className="pb-8 flex gap-5 justify-center items-center font-medium text-center">
                         <Link href="#about">About</Link>
                         <Link href="#ability">Abilities</Link>
@@ -20,8 +20,8 @@ export default function Footer() {
                         <Link href="#contact">Contact</Link>
                     </div>
 
-                    <div className="flex justify-center gap-4 md:gap-8">
-                        <div className="p-1 bg-base-200 rounded-lg border">
+                    <div className="flex justify-center gap-5">
+                        <div className="p-1 bg-base-200 rounded-lg">
                             <a href="https://facebook.com/sakirsyarian">
                                 <svg
                                     width="30"
@@ -36,7 +36,7 @@ export default function Footer() {
                                 </svg>
                             </a>
                         </div>
-                        <div className="p-1 bg-base-200 rounded-lg border">
+                        <div className="p-1 bg-base-200 rounded-lg">
                             <a href="https://threads.com/sakirsyarian">
                                 <svg
                                     width="30"
@@ -51,7 +51,7 @@ export default function Footer() {
                                 </svg>
                             </a>
                         </div>
-                        <div className="p-1 bg-base-200 rounded-lg border">
+                        <div className="p-1 bg-base-200 rounded-lg">
                             <a href="https://twitter.com/sakirsyarian">
                                 <svg
                                     width="30"

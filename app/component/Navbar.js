@@ -6,10 +6,10 @@ export default function Navbar() {
         <nav className="relative">
             <div className="fixed top-0 left-0 right-0">
                 <div className="bg-base-100">
-                    <div className="sm:container mx-auto border">
-                        <div className="px-4 md:px-8 xl:px-60 navbar border">
+                    <div className="sm:container mx-auto">
+                        <div className="px-4 md:px-8 xl:px-60 navbar">
                             {/* logo */}
-                            <div className="flex-1 border">
+                            <div className="flex-1">
                                 <Link
                                     href="#home"
                                     className="btn btn-ghost normal-case text-xl text-emerald-500"
@@ -19,7 +19,7 @@ export default function Navbar() {
                             </div>
 
                             {/* navigation */}
-                            <div className="flex-none border">
+                            <div className="flex-none">
                                 <ul className="hidden md:navbar gap-5">
                                     <li>
                                         <Link href="#about">About</Link>
@@ -38,7 +38,7 @@ export default function Navbar() {
                                 <Theme />
 
                                 {/* button navigation */}
-                                <div className="btm-nav md:hidden border">
+                                <div className="btm-nav md:hidden">
                                     <Link
                                         href="#about"
                                         className="hover:active"

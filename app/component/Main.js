@@ -8,7 +8,7 @@ import Testimonial from "./Testimonial";
 
 export default function Main() {
     return (
-        <main className="sm:container mx-auto border">
+        <main className="sm:container mx-auto">
             <div className="pt-28 md:pt-40 pb-14 md:pb-20">
                 <Hero />
                 <About />

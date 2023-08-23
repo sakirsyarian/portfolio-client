@@ -16,7 +16,7 @@ export default function ProjectList({ project }) {
                 />
 
                 <div className="p-6">
-                    <h3 className="card-title font-medium text-lg border">
+                    <h3 className="card-title font-medium text-lg">
                         {project.name}
                     </h3>
                     <button
@@ -25,7 +25,7 @@ export default function ProjectList({ project }) {
                                 .getElementById("modal_" + project._id)
                                 .showModal();
                         }}
-                        className="mt-2 flex border"
+                        className="mt-2 flex"
                     >
                         <span className="mr-2 text-sm text-emerald-400">
                             See more
@@ -52,13 +52,14 @@ export default function ProjectList({ project }) {
             <dialog id={"modal_" + project._id} className="modal">
                 <form
                     method="dialog"
-                    className="p-8 md:p-14 modal-box max-w-5xl space-y-6"
+                    className="p-5 md:p-14 modal-box max-w-5xl space-y-6"
                 >
                     <h3 className="font-bold text-xl text-center text-emerald-500">
                         {project.name}
                     </h3>
                     <p className="text-gray-600">{project.description}</p>
-                    <ul className="flex flex-wrap gap-2 border">
+                    <p className="text-gray-600">Tech stack :</p>
+                    <ul className="flex flex-wrap gap-2">
                         {project.tags.map((item) => (
                             <li
                                 className="px-3 py-2 bg-base-200 rounded-lg text-center text-sm text-gray-600"
