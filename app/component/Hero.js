@@ -3,19 +3,19 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section id="hero" className="px-4 md:px-8 xl:px-60 w-full">
-            <div id="hero" className="hero ">
+        <section id="hero" className="px-4 md:px-8 xl:px-60 pb-10 w-full">
+            <div className="hero">
                 {/* left */}
                 <div className="flex flex-row justify-center items-center gap-8 lg:gap-24">
                     {/* social media */}
                     <div className="flex flex-col gap-5">
                         <a
-                            href="https://github.com"
+                            href="https://github.com/sakirsyarian"
                             target="_blank"
-                            className="p-1 mx-auto bg-gray-100 rounded"
+                            className="p-1 mx-auto bg-icon rounded"
                         >
                             <svg
-                                className="w-5 h-5"
+                                className="w-6 h-6"
                                 viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
@@ -26,12 +26,12 @@ export default function Hero() {
                             </svg>
                         </a>
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/sakirsyarian/"
                             target="_blank"
-                            className="p-1 mx-auto bg-gray-100 rounded"
+                            className="p-1 mx-auto bg-icon rounded"
                         >
                             <svg
-                                className="w-5 h-5"
+                                className="w-6 h-6"
                                 viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
@@ -42,12 +42,12 @@ export default function Hero() {
                             </svg>
                         </a>
                         <a
-                            href="https://instagram.com"
+                            href="https://www.instagram.com/sakirsyarian/"
                             target="_blank"
-                            className="p-1 mx-auto bg-gray-100 rounded"
+                            className="p-1 mx-auto bg-icon rounded"
                         >
                             <svg
-                                className="w-5 h-5"
+                                className="w-6 h-6"
                                 viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
@@ -70,13 +70,14 @@ export default function Hero() {
                         <div className="mt-10 md:mt-14 flex flex-col sm:flex-row gap-5">
                             <Link
                                 href="/cv.pdf"
-                                className="button outline-emerald text-emerald-500"
+                                className="button outline-emerald text-emerald-500 text-center"
+                                target="_blank"
                             >
                                 Download CV
                             </Link>
                             <Link
                                 href="#about"
-                                className="button emerald flex items-center"
+                                className="button emerald flex justify-center items-center"
                             >
                                 About Me
                             </Link>

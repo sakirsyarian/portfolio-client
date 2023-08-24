@@ -14,7 +14,7 @@ async function getTestimonials() {
 
 function TestimonialList({ testimonial }) {
     return (
-        <div className="p-6 space-y-2 rounded-2xl shadow-lg">
+        <div className="p-6 space-y-2 bg-base-100 rounded-2xl shadow-lg">
             <div className="mx-auto">
                 <Image
                     src={`/avatar/${testimonial.image}`}

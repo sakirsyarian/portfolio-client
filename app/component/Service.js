@@ -14,7 +14,7 @@ export default function Service() {
             <div className="mx-auto px-4 md:px-8 xl:px-60 py-12">
                 {/* offering */}
                 <div className="flex flex-col md:flex-row justify-center gap-5">
-                    <div className="w-full rounded-2xl shadow-lg">
+                    <div className="w-full bg-base-100 rounded-2xl shadow-lg">
                         <div className="card-body space-y-2">
                             <h3 className="card-title text-lg">SEO Friendly</h3>
                             <button
@@ -40,7 +40,7 @@ export default function Service() {
                         </div>
                     </div>
 
-                    <div className="w-full rounded-2xl shadow-lg">
+                    <div className="w-full bg-base-100 rounded-2xl shadow-lg">
                         <div className="card-body space-y-2">
                             <h3 className="card-title text-lg">UI Designer</h3>
                             <button
@@ -66,7 +66,7 @@ export default function Service() {
                         </div>
                     </div>
 
-                    <div className="w-full rounded-2xl shadow-lg">
+                    <div className="w-full bg-base-100 rounded-2xl shadow-lg">
                         <div className="card-body space-y-2">
                             <h3 className="card-title text-lg">
                                 Mobile Optimized

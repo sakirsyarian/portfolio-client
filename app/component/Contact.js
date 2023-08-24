@@ -1,5 +1,4 @@
-import Image from "next/image";
-import React from "react";
+import ContactForm from "./ContactForm";
 
 export default function Contact() {
     return (
@@ -16,49 +15,25 @@ export default function Contact() {
                 <div className="">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 justify-center">
                         {/* left */}
-                        <div className="flex flex-col items-center justify-center gap-5 text-center">
-                            <div className="grid justify-center p-6 w-full space-y-3 rounded-2xl shadow-lg">
+                        <div className="flex flex-col items-center justify-around gap-5 text-center">
+                            <div className="grid justify-center p-6 w-full bg-base-100 space-y-1 rounded-2xl">
                                 <div className="flex justify-center items-center gap-2">
-                                    <div className="">
-                                        <Image
-                                            src="/social/email.png"
-                                            width={30}
-                                            height={30}
-                                            alt="email"
-                                        />
-                                    </div>
                                     <p className="font-medium">Email</p>
                                 </div>
                                 <p className="text-sm text-emerald-400">
                                     sakirsyarian@gmail.com
                                 </p>
                             </div>
-                            <div className="grid justify-center p-6 w-full space-y-3 rounded-2xl shadow-lg">
+                            <div className="grid justify-center p-6 w-full bg-base-100 space-y-1 rounded-2xl">
                                 <div className="flex justify-center items-center gap-2">
-                                    <div className="">
-                                        <Image
-                                            src="/social/telegram.png"
-                                            width={30}
-                                            height={30}
-                                            alt="telegram"
-                                        />
-                                    </div>
                                     <p className="font-medium">Telegram</p>
                                 </div>
                                 <p className="text-sm text-emerald-400">
                                     @sakirsyarian
                                 </p>
                             </div>
-                            <div className="grid justify-center p-6 w-full space-y-3 rounded-2xl shadow-lg">
+                            <div className="grid justify-center p-6 w-full bg-base-100 space-y-1 rounded-2xl">
                                 <div className="flex justify-center items-center gap-2">
-                                    <div className="">
-                                        <Image
-                                            src="/social/discord.png"
-                                            width={30}
-                                            height={30}
-                                            alt="discord"
-                                        />
-                                    </div>
                                     <p className="font-medium">Discord</p>
                                 </div>
                                 <p className="text-sm text-emerald-400">
@@ -69,54 +44,7 @@ export default function Contact() {
 
                         {/* right */}
                         <div className="">
-                            <form action="#" className="space-y-5">
-                                <div>
-                                    <label
-                                        htmlFor="name"
-                                        className="block mb-2 font-medium text-sm text-gray-600"
-                                    >
-                                        Name
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="p-4 w-full text-sm rounded-lg focus:outline-0 border-2"
-                                        placeholder="Insert your name"
-                                    />
-                                </div>
-                                <div>
-                                    <label
-                                        htmlFor="email"
-                                        className="block mb-2 font-medium text-sm text-gray-600"
-                                    >
-                                        Email
-                                    </label>
-                                    <input
-                                        type="email"
-                                        className="p-4 w-full text-sm rounded-lg focus:outline-0 border-2"
-                                        placeholder="Insert your email"
-                                        required
-                                    />
-                                </div>
-                                <div className="sm:col-span-2">
-                                    <label
-                                        htmlFor="message"
-                                        className="block mb-2 font-medium text-sm text-gray-600"
-                                    >
-                                        Message
-                                    </label>
-                                    <textarea
-                                        rows="6"
-                                        className="p-4 w-full text-sm rounded-lg focus:outline-0 border-2"
-                                        placeholder="Write your message"
-                                    ></textarea>
-                                </div>
-                                <button
-                                    type="submit"
-                                    className="button emerald"
-                                >
-                                    Send Message
-                                </button>
-                            </form>
+                            <ContactForm />
                         </div>
                     </div>
                 </div>

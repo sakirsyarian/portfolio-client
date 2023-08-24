@@ -13,7 +13,7 @@ export default function About() {
                 <div className="">
                     {/* card */}
                     <div className="flex flex-col md:flex-row justify-center gap-5 text-center">
-                        <div className="p-5 w-full xl:w-1/4 space-y-2 rounded-2xl shadow-lg">
+                        <div className="p-5 w-full xl:w-1/4 space-y-2 bg-base-100 rounded-2xl shadow-lg">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -33,7 +33,7 @@ export default function About() {
                                 3 Years Working
                             </p>
                         </div>
-                        <div className="p-5 w-full xl:w-1/4 space-y-2 rounded-2xl shadow-lg">
+                        <div className="p-5 w-full xl:w-1/4 space-y-2 bg-base-100 rounded-2xl shadow-lg">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -53,7 +53,7 @@ export default function About() {
                                 20 + Projetcs
                             </p>
                         </div>
-                        <div className="p-5 w-full xl:w-1/4 space-y-2 rounded-2xl shadow-lg">
+                        <div className="p-5 w-full xl:w-1/4 space-y-2 bg-base-100 rounded-2xl shadow-lg">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"

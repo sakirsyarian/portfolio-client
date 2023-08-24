@@ -21,13 +21,14 @@ export default function Footer() {
                     </div>
 
                     <div className="flex justify-center gap-5">
-                        <div className="p-1 bg-base-200 rounded-lg">
-                            <a href="https://facebook.com/sakirsyarian">
+                        <div className="p-1 bg-icon rounded-lg">
+                            <a href="https://www.facebook.com/sakirsyarian">
                                 <svg
-                                    width="30"
-                                    height="30"
+                                    width="25"
+                                    height="25"
                                     viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg"
+                                    quality={100}
                                 >
                                     <path
                                         fill="#000000"
@@ -36,13 +37,14 @@ export default function Footer() {
                                 </svg>
                             </a>
                         </div>
-                        <div className="p-1 bg-base-200 rounded-lg">
-                            <a href="https://threads.com/sakirsyarian">
+                        <div className="p-1 bg-icon rounded-lg">
+                            <a href="https://www.threads.net/@sakirsyarian">
                                 <svg
-                                    width="30"
-                                    height="30"
+                                    width="25"
+                                    height="25"
                                     viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg"
+                                    quality={100}
                                 >
                                     <path
                                         fill="#000000"
@@ -51,13 +53,14 @@ export default function Footer() {
                                 </svg>
                             </a>
                         </div>
-                        <div className="p-1 bg-base-200 rounded-lg">
+                        <div className="p-1 bg-icon rounded-lg">
                             <a href="https://twitter.com/sakirsyarian">
                                 <svg
-                                    width="30"
-                                    height="30"
+                                    width="25"
+                                    height="25"
                                     viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg"
+                                    quality={100}
                                 >
                                     <path
                                         fill="#000000"
@@ -67,7 +70,6 @@ export default function Footer() {
                             </a>
                         </div>
                     </div>
-
                     <div className="pt-16">
                         <p className="text-center">
                             © Sarian. All rigths reserved

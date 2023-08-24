@@ -12,7 +12,7 @@ export default function Navbar() {
                             <div className="flex-1">
                                 <Link
                                     href="#home"
-                                    className="btn btn-ghost normal-case text-xl text-emerald-500"
+                                    className="btn btn-ghost hover:bg-transparent normal-case text-xl text-emerald-500"
                                 >
                                     Sarian
                                 </Link>

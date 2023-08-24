@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ProjectList({ project }) {
     return (
         <>
-            <div className="w-full h-full rounded-2xl shadow-lg">
+            <div className="w-full h-full bg-base-100 rounded-2xl shadow-lg">
                 <Image
                     src={`/project/${project.image}`}
                     width={800}
