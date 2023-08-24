@@ -2,7 +2,7 @@ import ProjectList from "@/app/component/ProjectList";
 
 async function getProjects() {
     const res = await fetch("http://localhost:3000/projects", {
-        next: { revalidate: 0 },
+        next: { tags: ["portfolio"] },
     });
 
     if (!res.ok) {

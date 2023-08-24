@@ -2,7 +2,7 @@ import Image from "next/image";
 
 async function getTestimonials() {
     const res = await fetch("http://localhost:3000/testimonials", {
-        next: { revalidate: 0 },
+        next: { tags: ["portfolio"] },
     });
 
     if (!res.ok) {

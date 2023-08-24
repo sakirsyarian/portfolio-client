@@ -2,7 +2,7 @@ import Image from "next/image";
 
 async function getAbilities() {
     const res = await fetch("http://localhost:3000/abilities", {
-        next: { revalidate: 0 },
+        next: { tags: ["portfolio"] },
     });
 
     if (!res.ok) {
