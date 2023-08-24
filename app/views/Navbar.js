@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Theme from "./Theme";
+import Theme from "@/app/component/Theme";
 
 export default function Navbar() {
     return (

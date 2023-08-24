@@ -1,4 +1,4 @@
-import ProjectList from "./ProjectList";
+import ProjectList from "@/app/component/ProjectList";
 
 async function getProjects() {
     const res = await fetch("http://localhost:3000/projects", {

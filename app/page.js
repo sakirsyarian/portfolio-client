@@ -1,6 +1,6 @@
-import Footer from "./component/Footer";
-import Main from "./component/Main";
-import Navbar from "./component/Navbar";
+import Footer from "./views/Footer";
+import Main from "./views/Main";
+import Navbar from "./views/Navbar";
 
 export default function Home() {
     return (
