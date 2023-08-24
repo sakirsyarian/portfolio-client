@@ -1,17 +1,41 @@
 "use client";
 
-function handleSubmit(e) {
-    e.preventDefault();
-    const form = e.target;
-    const formData = new FormData(form);
-
-    const formJson = Object.fromEntries(formData.entries());
-    // console.log(formJson);
-}
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
+    const form = useRef();
+    const toast = useRef();
+
+    function handleSubmit(e) {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_ywq3648",
+                "template_7rlvksh",
+                form.current,
+                "Iz_ZTYcxSEZtuyjaR"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    toast.current.classList.remove("hidden");
+
+                    setTimeout(() => {
+                        toast.current.classList.add("hidden");
+                    }, 5000);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+
+        form.current.reset();
+    }
+
     return (
-        <form onSubmit={handleSubmit} className="space-y-5">
+        <form ref={form} onSubmit={handleSubmit} className="space-y-5">
             <div>
                 <label
                     htmlFor="name"
@@ -58,6 +82,14 @@ export default function ContactForm() {
             <button type="submit" className="button emerald">
                 Send Message
             </button>
+
+            <div ref={toast} className="hidden toast toast-end toast-top">
+                <div className="alert alert-success">
+                    <span className="text-base-100">
+                        Message sent successfully.
+                    </span>
+                </div>
+            </div>
         </form>
     );
 }
