@@ -30,7 +30,7 @@ export default async function Project() {
                         Some of the noteworthy projects I have built:
                     </p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-5">
+                    <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-5">
                         {/* card */}
                         {projects.map((project) => (
                             <ProjectList key={project._id} project={project} />
