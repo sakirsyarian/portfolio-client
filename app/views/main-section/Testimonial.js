@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 async function getTestimonials() {
-    const res = await fetch("http://localhost:3000/testimonials", {
+    const res = await fetch(process.env.FETCH_URL + "testimonials", {
         next: { tags: ["portfolio"] },
     });
 
