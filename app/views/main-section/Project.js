@@ -1,7 +1,7 @@
 import ProjectList from "@/app/component/ProjectList";
 
 async function getProjects() {
-    const res = await fetch(process.env.FETCH_URL + "projects", {
+    const res = await fetch("https://portfolio.elgoritme.com/projects", {
         next: { tags: ["portfolio"] },
     });
 
