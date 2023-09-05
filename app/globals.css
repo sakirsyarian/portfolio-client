@@ -1,3 +1,76 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --first-hue: 161;
+    --sat: 94%;
+    --lig: 30%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply transition-all duration-300 
+}
+
+.hero {
+    @apply flex flex-col md:flex-row items-center justify-around gap-16 md:gap-0
+}
+
+.hero-bg {
+    justify-self: center;
+    width: 290px;
+    height: 400px;
+    background: linear-gradient(180deg,
+            hsla(var(--first-hue), var(--sat), var(--lig), 1),
+            hsla(var(--first-hue), var(--sat), var(--lig), 0.2));
+    border-radius: 10rem 10rem 1rem 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.button {
+    @apply px-4 py-3 font-semibold rounded-lg transition-all duration-300
+}
+
+.emerald {
+    @apply bg-emerald-500 text-base-100 
+}
+
+.outline-emerald {
+    @apply border-2 border-emerald-500 hover:bg-emerald-500 hover:text-base-100 
+}
+
+@media screen and (max-width: 600px) {
+    .hero-bg {
+            width: 270px;
+            height: 380px;
+            margin: auto;
+        }
+}
+
+[data-theme="light"] {
+    .bg-icon {
+            @apply bg-gray-50
+        }
+}
+
+[data-theme="dark"] {
+    .bg-gray-50 {
+        @apply bg-base-300
+    }
+    .bg-icon {
+        @apply bg-gray-200
+    }
+    .text-gray-500 {
+        @apply text-gray-400
+    }
+    .text-gray-600 {
+        @apply text-gray-400
+    }
+}
