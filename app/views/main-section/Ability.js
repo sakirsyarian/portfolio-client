@@ -1,15 +1,20 @@
 import Image from "next/image";
 
 async function getAbilities() {
-    const res = await fetch("https://portfolio.elgoritme.com/abilities", {
-        next: { tags: ["portfolio"] },
-    });
+    try {
+        const res = await fetch("https://portfolio.elgoritme.com/abilities", {
+            next: { tags: ["portfolio"] },
+        });
 
-    if (!res.ok) {
-        throw new Error("Failed to fetch data");
+        if (!res.ok) {
+            console.log(res);
+            throw new Error("Failed to fetch data");
+        }
+
+        return res.json();
+    } catch (error) {
+        console.log(error);
     }
-
-    return res.json();
 }
 
 function AbilityList({ ability }) {

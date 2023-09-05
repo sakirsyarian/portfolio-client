@@ -1,15 +1,20 @@
 import ProjectList from "@/app/component/ProjectList";
 
 async function getProjects() {
-    const res = await fetch("https://portfolio.elgoritme.com/projects", {
-        next: { tags: ["portfolio"] },
-    });
+    try {
+        const res = await fetch("https://portfolio.elgoritme.com/projects", {
+            next: { tags: ["portfolio"] },
+        });
 
-    if (!res.ok) {
-        throw new Error("Failed to fetch data");
+        if (!res.ok) {
+            console.log(res);
+            throw new Error("Failed to fetch data");
+        }
+
+        return res.json();
+    } catch (error) {
+        console.log(error);
     }
-
-    return res.json();
 }
 
 export default async function Project() {
