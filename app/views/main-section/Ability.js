@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 async function getAbilities() {
-    const res = await fetch("http://localhost:3000/abilities", {
+    const res = await fetch(process.env.FETCH_URL + "abilities", {
         next: { tags: ["portfolio"] },
     });
 
